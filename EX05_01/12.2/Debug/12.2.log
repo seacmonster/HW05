@@ -1,0 +1,29 @@
+﻿Build started 6/10/2015 4:34:39 PM.
+     1>Project "C:\Users\Colin\documents\visual studio 2013\Projects\12.2\12.2\12.2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\colin\documents\visual studio 2013\projects\12.2\12.2\source.cpp(14): error C2664: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const std::allocator<char> &)' : cannot convert argument 1 from 'int' to 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &'
+                 with
+                 [
+                     _Elem=char
+                 ]
+                 Reason: cannot convert from 'int' to 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+                 No constructor could take the source type, or constructor overload resolution was ambiguous
+                 c:\users\colin\documents\visual studio 2013\projects\12.2\12.2\source.cpp(45) : see reference to function template instantiation 'T linearSearch<std::string>(const T [],T,int)' being compiled
+                 with
+                 [
+                     T=std::string
+                 ]
+     1>c:\users\colin\documents\visual studio 2013\projects\12.2\12.2\source.cpp(16): error C2664: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const std::allocator<char> &)' : cannot convert argument 1 from 'int' to 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &'
+                 with
+                 [
+                     _Elem=char
+                 ]
+                 Reason: cannot convert from 'int' to 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+                 No constructor could take the source type, or constructor overload resolution was ambiguous
+     1>Done Building Project "C:\Users\Colin\documents\visual studio 2013\Projects\12.2\12.2\12.2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.31
