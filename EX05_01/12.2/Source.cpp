@@ -4,17 +4,19 @@
 #include <iostream>
 #include <string>
 using namespace std;
+//Generic template for any arguments
 
 template <typename T>
-T linearSearch(const T list[], T key, int arraySize) //Generic template for any arguments
+int linearSearch(T list[], T key, int arraySize)
 {
 	for (int i = 0; i < arraySize; i++)
 	{
 		if (key == list[i])
 			return i;
 	}
+
 	return -1;
-};
+}
 
 
 int main()
@@ -38,14 +40,13 @@ int main()
 	double m = linearSearch(list2, -3.3, 8);
 	cout << m << endl << endl;
 
-	string list3[] = { "Hello World" }; //same test batch for doubles
-	string hello = "Hello World";
-	string hello1 = "Hello World1";
-	string well = "WELL";
-	string a = linearSearch(list3, hello, 8);
-	cout << a << endl;
-	string t = linearSearch(list3, hello1, 8);
-	cout << t << endl;
-	string v = linearSearch(list3, well, 8);
-	cout << v << endl << endl;
+//	//Could not figure out how to test strings without writing a separate function to do so.
+//
+//	string list3[] = { "1", "4", "4", "2", "5", "-3", "6", "2" }; //same test batch for doubles
+//	string a = linearSearch(list3, 2, 8);
+//	cout << a << endl;
+//	string t = linearSearch(list3, 4, 8);
+//	cout << t << endl;
+//	string v = linearSearch(list3, 6, 8);
+//	cout << v << endl << endl;
 }
